@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontak - Mini Disney</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0c1b3b;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e2a56;
+    }
+
+    .logo {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+
+    header h1 {
+      margin-top: 10px;
+      font-family: 'Comic Sans MS', cursive;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    nav {
+      background-color: #23306e;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .widget-side {
+      background-color: #2d3b85;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .widget-side h3 {
+      color: #ffcc00;
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ffcc00;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      margin-bottom: 10px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-around;
+      background-color: #1e2a56;
+      padding: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .widget-bottom {
+      background-color: #2d3b85;
+      padding: 15px;
+      border-radius: 10px;
+      width: 30%;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .widget-bottom:hover {
+      transform: scale(1.05);
+      background-color: #3a4cd1;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      footer {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .widget-bottom {
+        width: 80%;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <img src="disney.jpg" alt="Disney Logo" class="logo">
+    <h1>Kontak Mini Disney</h1>
+  </header>
+
+  <!-- MENU -->
+  <nav>
+    <ul>
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Film</a></li>
+      <li><a href="#">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- KONTEN UTAMA -->
+  <main>
+    <div class="widget-side">
+      <img src="jj.jpg" alt="Foto Profil" class="profile-photo">
+      <h3>Informasi Kontak</h3>
+      <p>Nama: Muharani<br>
+         NIM: 2401162012<br>
+         Email: muharani03@gmail.com<br>
+         Telepon: 0800-123-456</p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="widget-bottom">🎬 Cerita Karakter</div>
+    <div class="widget-bottom">📩 Kirim Pesan ke Kami</div>
+    <div class="widget-bottom">🎥 Tonton Trailer Ajaib</div>
+  </footer>
+</body>
+</html>
